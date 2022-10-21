@@ -13,7 +13,7 @@ type Book {
     bookId: ID!
     image: String
     title: String!
-    authors: String
+    author: String
     description: String
     image: String
     link: String
@@ -25,7 +25,7 @@ type Auth {
 }
 
 type Query {
-    me: User
+    me: User(id:INT!)
 }
 
 type Mutation {
